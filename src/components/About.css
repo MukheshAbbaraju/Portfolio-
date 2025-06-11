@@ -1,0 +1,25 @@
+.About{
+    margin-top: 5%;
+    opacity: 0;
+    animation: fadeIn 0.5s ease-in forwards;
+    animation-delay: 2s;
+}
+.whati {
+    flex: 1;
+    list-style: none;
+    text-align: center;
+    display: flex;          
+    justify-content: center; 
+    gap: 30px;              
+    padding: 0;             
+}
+.whati li {
+    justify-content: center;            
+}
+
+.Pylogo{
+    width: 40%;
+}
+.adjust{
+    padding-top: 15%;
+}
