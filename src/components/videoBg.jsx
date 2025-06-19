@@ -15,7 +15,7 @@ const Main = () => {
   }, []);
 
   return (
-    <div className='main'>
+    <div id='home' className='main'>
       <video
         ref={videoRef}
         src={video}
