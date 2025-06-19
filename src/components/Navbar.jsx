@@ -6,10 +6,22 @@ const Navbar = () => {
     <div class='navbar'>
       <img src={NavLogo} alt='Hola' className='NavLogo' />
         <ul>
-            <li><a href='https://www.ixigo.com/trains' target="_blank" rel="noopener noreferrer" className='hover-2'>Home</a></li>
-            <li><a href='https://www.ixigo.com/trains' target="_blank" rel="noopener noreferrer" className='hover-2'>About</a></li>
-            <li><a href='https://www.ixigo.com/trains' target="_blank" rel="noopener noreferrer" className='hover-2'>Works</a></li>
-            <li><a href='https://www.ixigo.com/trains' target="_blank" rel="noopener noreferrer" className='hover-2'>Touch Me</a></li>
+            <li><a href="#home" onClick={(e) => {
+              e.preventDefault();
+              window.location.reload();
+            }} >Home</a></li>
+            <li><a href="#about" onClick={(e) => {
+              e.preventDefault();
+              document.getElementById('about')?.scrollIntoView({ behavior: 'smooth' });
+            }} >About</a></li>
+            <li><a href="#works" onClick={(e) => {
+              e.preventDefault();
+              document.getElementById('personal')?.scrollIntoView({ behavior: 'smooth' });
+            }} >Personal</a></li>
+            <li><a href="#contact" onClick={(e) => {
+              e.preventDefault();
+              document.getElementById('touchme')?.scrollIntoView({ behavior: 'smooth' });
+            }} >Touch Me</a></li>
 
         </ul>
     </div>

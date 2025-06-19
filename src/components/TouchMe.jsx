@@ -3,7 +3,7 @@ import './TouchMe.css'
 
 const TouchMe = () => {
   return (
-    <div className='Touchme'>
+    <div id='touchme' className='Touchme'>
       <h1>Touch Me</h1>
       <div className="phone">
         <h3>Ph.No: 8340044175</h3>
